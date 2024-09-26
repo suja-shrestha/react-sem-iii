@@ -68,3 +68,61 @@
     padding: 20px;
     overflow: hidden;
 }
+.discover p{
+    padding: 80px 0px 20px 0px
+}
+.box{
+    border: 1px solid rgb(128, 124, 124);
+    width: 85%;
+    border-radius: 10px;
+    background-color: rgb(246, 250, 250);
+    transform: translateX(8%);
+    margin-top: 60px;
+}
+
+.box ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+ .box ul li{
+    text-wrap: wrap;
+    transform: translateY(25px);
+
+ }
+ .box ul li p{
+    padding-top: 10px;
+
+ }
+ .box ul li h5{
+    font-weight: bolder;
+ }
+ .journey {
+    display: flex;
+    width:100% ;
+    margin-top: 100px;
+ }
+ .journey .left1 {
+    width: 50%;
+    padding-left:110px ;
+    
+ }
+ .journey .right1 {
+    width: 50%;
+    overflow: hidden;
+}
+
+.journey .right1 img {
+    max-width: 100%; 
+    height: 400px;    
+    transform: translatex(38%);
+}
+
+.journey .left1 button{
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
