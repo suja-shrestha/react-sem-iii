@@ -13,7 +13,10 @@
     left: 0;
     z-index: 10;
 }
-
+.nav img{
+    width: 80px;
+    border-radius:20px;
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -27,10 +30,21 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    
 }
 
 .nav ul li {
     list-style: none;
+    font-size: 1.2em;
+    border-radius: 10px ;
+    padding: 0px 10px;
+    transition: 0.5s
+}
+.left li:hover{
+    background: red;
+    color: white;
+cursor: pointer;
+    
 }
 
 .left li img {
@@ -61,4 +75,10 @@
     color: black;
     padding: 0 10px;
     background-color: transparent;
+    font-size: 1em;
+    transition: box-shadow 0.3s ease;
+}
+.right li button:hover {
+    box-shadow: 0px 12px 18px  rgba(0, 0, 0, 0.5);
+ 
 }

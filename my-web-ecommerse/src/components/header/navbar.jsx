@@ -6,8 +6,9 @@ function Tauko() {
         <>
             <div className="head">
                 <div className="nav">
+                    <img src={logo} alt="Kaneki Logo" />
+
                     <ul className='left'>
-                        <li><img src={logo} alt="Kaneki Logo" /></li>
                         <li>Home</li>
                         <li>Shop</li>
                         <li>About Us</li>

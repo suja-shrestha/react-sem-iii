@@ -100,24 +100,196 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="innovation">
+            <div className="innovation mt-4">
                 <div className='texts'>
                     <p >Elevate Your Shopping</p>
                     <h5>Innovative Features for Success</h5>
                 </div>
-                <div className='four-box'>
+                <div className='four-box mt-5'>
                     <div>
-                        <div className="boxs"></div>
-                        <div className="boxs"></div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-balloon-fill px-2  "></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2'>User-Friendly</p>
+                            </div>
+                            <p>Enjoy peace of mind with our advanced security protocols for online transactions.</p>
+                            <a href=""> Discover More Features</a>
+
+
+                        </div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-stars px-2"></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2'>Secure Payments</p>
+                            </div>
+                            <p>Our website is designed with user experience in mind, making navigation seamless and enjoyable.</p>
+                            <a href="">Explore Mobile Features </a>
+
+
+                        </div>
                     </div>
                     <div>
-                        <div className="boxs"></div>
-                        <div className="boxs"></div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-file-lock2 px-2"></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2'>Mobile Optimized</p>
+                            </div>
+                            <p>Shop on the go with our fully responsive design that looks great on any device.</p>
+                            <a href=""> Learn About Security</a>
+
+
+                        </div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-heart-fill px-2"></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2'>Analytics Tool</p>
+                            </div>
+                            <p>Gain insights into customer behavior with powerful analytics tools integrated into our platform.</p>
+                            <a href=""> Analyze Your Data</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div className="review">
+                    <h5>What Our Customers Are Saying!</h5>
+                    <div className='d-flex'>
+                        <div className="review-box">
+                            <div>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>Fantastic Experience! I recently purchased a laptop from this site, and I couldn't be happier! The delivery was prompt, and the product exceeded my expectations. The description was accurate, and the customer service was outstanding. I will definitely shop here again!</p>
+                            <h1>Slack</h1>
+                        </div>
+                        <div className="review-box mb-5">
+                            <div>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>Highly Recommend! I bought a dress for my sister's wedding, and it was stunning! The quality was top-notch, and it fit perfectly. The checkout process was seamless, and I received my order in no time. I am recommending this site to all my friends!</p>
+                            <h1>Stripe</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div className='texts  '>
+                    <p >Empower Your Business</p>
+                    <h5>Essential Features for Growth</h5>
+                </div>
+                <div className='four-box mt-5'>
+                    <div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-balloon-fill px-2  "></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2  '>Customizable Design</p>
+                            </div>
+                            <p>Create a unique shopping experience that reflects your brand identity with our customizable templates.</p>
+                            <a href=""> Customize Your Store</a>
+
+
+                        </div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-stars px-2"></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2'>SEO Friendly</p>
+                            </div>
+                            <p>Boost your visibility on search engines with our built-in SEO features that enhance your site's ranking.</p>
+                            <a href="">Improve Your SEO</a>
+
+
+                        </div>
+                    </div>
+                    <div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-file-lock2 px-2"></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2'>24/7 Support</p>
+                            </div>
+                            <p>Our dedicated support team is available around the clock to assist you with any queries or issues.</p>
+                            <a href=""> Contact Support Anytime</a>
+
+
+                        </div>
+                        <div className="boxs">
+
+                            <div className='d-flex pt-2 '>
+                                <i class="bi bi-heart-fill px-2"></i>
+                                <p style={{ fontWeight: "bold" }} className='pt-2 '>Inventory Managemently</p>
+                            </div>
+                            <p>Effortlessly manage your stock levels and streamline order fulfillment with our comprehensive inventory tools.</p>
+                            <a href=""> Manage Inventory Efficiently</a>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <div className="your-questions">
+                <div className="text">
+                    <h2>Your Questions Answered</h2>
+                    <p>We’re here to help!</p>
 
+                </div>
+                <div className="questions">
+                    <div className="six">
+                        <p>What payment methods do you accept?</p>
+                    </div>
+                    <div className="six">
+                        <p>How can I track my order?</p>
+                        <p>You can track your order using the tracking link provided in your confirmation email. Simply click the link, and you'll be directed to the tracking information directly on our website, where you can see the status of your shipment in real-time.</p>
+                    </div>
+                    <div className="six">
+                        <p>Do you offer international shipping?</p>
+                        <p>Yes, we proudly offer international shipping to a variety of countries. Please check our shipping policy for more details regarding shipping rates and delivery times to your location.</p>
+                    </div>
+                    <div className="six">
+                        <p>What is your return policy?</p>
+                        <p>We have a hassle-free return policy that allows you to return items within 30 days of purchase. Items must be in their original condition, and you can initiate the return process through our website.</p>
+                    </div>
+                    <div className="six">
+                        <p>How can I contact customer support?</p>
+                        <p>You can reach our customer support team via the contact form on our website, or you can email us directly at support@ecommercewebsite.com. We're here to assist you with any queries you may have.</p>
+                    </div>
+                    <div className="six">
+                        <p>Do you have a loyalty program?</p>
+                        <p>Absolutely! Our loyalty program rewards you for every purchase you make. Sign up now to start earning points that can be redeemed for discounts on future orders.</p>
+                    </div>
+                </div>
+            </div>
+            <div className='sign-up'>
+                
+                <div className="left2">
+                   <img src="https://img.freepik.com/free-vector/flat-join-us-concept-promo_23-2148936476.jpg?t=st=1728916127~exp=1728919727~hmac=90e9fee72612f94b18b474fde580c347cc5373490b1baaa22bc26feb728ce50d&w=1380" alt="" srcset="" />
+                </div>
+                <div className="right2">
+                    <div className='sign'>
+                    <h3 style={{fontWeight:"bold"}}>Unlock Your Shopping Potential!</h3>
+                    <p className='pt-2'>Sign in to explore an extensive range of products designed to meet your needs. Enjoy personalized recommendations and exclusive deals tailored just for you!</p>
+                    <input style={{borderRadius:"5px", padding:"5px",marginTop:"20px"}} type="email" placeholder=" Sign-in with email" required />
+                    <br />
+                    <button style={{background:"blue", borderRadius:"10px", width:"150px", color:"white"}} className='mt-3 p-1'>Join us today</button>
+                  <a href=""> <p style={{paddingTop:"20px", fontSize:"14px"}}> Read Our Privacy Policy Here!</p></a> 
+
+                    </div>
+                   
+                </div>
+            </div>
+            
 
         </>
     );
