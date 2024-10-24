@@ -1,0 +1,41 @@
+.footer{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    margin: 0% 8%;
+    border-top: 1px solid gray;
+    grid-gap: 10%;
+}
+.grid-item{
+    margin-top: 50px;
+}
+.grid-item ul li{
+    list-style: none;
+    line-height: 40px;
+    
+}
+.grid-item ul{
+    padding: 0;
+}
+.grid-item > p{
+    border-bottom: 1px solid gray;
+    padding-bottom: 4px;
+
+}
+.end {
+    margin-left: 8%;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between icon and text */
+    padding-top: 30px; /* Space above the section */
+}
+
+.end > i {
+    font-size: 30px; /* Icon size */
+    line-height: 1; /* Remove extra space around the icon */
+}
+
+/* Optional: Adjust the paragraph styles for better alignment */
+.end > p {
+    margin: 0; /* Remove default margin from the paragraph */
+    font-size: 1.2em; /* Adjust font size as needed */
+}
