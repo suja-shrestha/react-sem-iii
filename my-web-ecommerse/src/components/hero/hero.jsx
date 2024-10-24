@@ -280,7 +280,7 @@ function Hero() {
                     <div className='sign'>
                     <h3 style={{fontWeight:"bold"}}>Unlock Your Shopping Potential!</h3>
                     <p className='pt-2'>Sign in to explore an extensive range of products designed to meet your needs. Enjoy personalized recommendations and exclusive deals tailored just for you!</p>
-                    <input style={{borderRadius:"5px", padding:"5px",marginTop:"20px"}} type="email" placeholder=" Sign-in with email" required />
+                    <input style={{borderRadius:"5px", padding:"5px",marginTop:"20px",width:"98%"}} type="email" placeholder=" Sign-in with email" required />
                     <br />
                     <button style={{background:"blue", borderRadius:"10px", width:"150px", color:"white"}} className='mt-3 p-1'>Join us today</button>
                   <a href=""> <p style={{paddingTop:"20px", fontSize:"14px"}}> Read Our Privacy Policy Here!</p></a> 
