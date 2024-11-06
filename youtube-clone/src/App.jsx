@@ -1,18 +1,20 @@
-import React from 'react'
-import Navbar from './Components/Navbar/navbar'
-import {Route, Routes} from 'react-router-dom'
-import Home from './pages/home/Home'
-
+import React, { useState } from 'react';
+import Navbar from './Components/Navbar/navbar';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/home';
 
 const App = () => {
-  return (
-    <div><Navbar/>
-    <Routes>
-      <Route path='/' element={<Home/>} /> 
-      <Route path='/video/:categoryId/:videoId' element={<video/>} />
-      </Routes>
-      </div>
-  )
-}
+  const [sidebar, setSidebar] = useState(true);
 
-export default App
+  return (
+    <div>
+      <Navbar setSidebar={setSidebar} /> 
+      <Routes>
+        <Route path='/' element={<Home sidebar={sidebar} />} />
+        <Route path='/video/:categoryId/:videoId' element={<div>Video Page</div>} />
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
