@@ -1,0 +1,19 @@
+.div2{
+    border: 2px solid ;
+    background: black;
+    padding: 20px;
+    width: 400px;
+    margin: 10px;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.div2:active{
+    background: white;
+    border: 2px solid rgb(0, 0, 0);
+    color:black;
+    transform: scale(0.9);
+}
