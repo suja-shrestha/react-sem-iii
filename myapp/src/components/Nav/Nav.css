@@ -1,0 +1,19 @@
+.nav{
+    margin-bottom: 20px;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    border: 1px solid gray;
+}
+.nav-items, ul {
+    display: flex;
+    list-style: none;
+    
+}
+.nav-items, ul , li{
+    column-gap: 20px;
+
+
+}
