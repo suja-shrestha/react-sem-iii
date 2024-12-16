@@ -1,7 +1,10 @@
 import './footer.css'
+import React from 'react';
+import Tauko from '../header/navbar';
 function Khuta() {
     return (
         <>
+ 
             <div class="footer">
                 <div class="grid-item">
                     <p>Features</p>

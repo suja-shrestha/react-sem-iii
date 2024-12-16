@@ -38,10 +38,12 @@
     font-size: 1.2em;
     border-radius: 10px ;
     padding: 0px 10px;
-    transition: 0.5s
+    transition: 0.5s;
+    border-bottom:none;
 }
+
 .left li:hover{
-    background: red;
+    background: orange;
     color: white;
 cursor: pointer;
     
@@ -81,4 +83,12 @@ cursor: pointer;
 .right li button:hover {
     box-shadow: 0px 12px 18px  rgba(0, 0, 0, 0.5);
  
+}
+.link{
+    text-decoration: none;
+    color: orange;
+
+}
+.link:hover{
+    color: white;
 }
