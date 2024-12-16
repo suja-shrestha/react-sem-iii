@@ -3,6 +3,7 @@ import "./App.css";
 // import Map from "./components/Map/Map";
 // import Counter from "./components/coounter/counter";
 // import Prop from "./components/Prop/prop";
+
 // import { useState } from "react";
 // import Blog from "./components/Blog/Blog";
 // import MapProp from "./components/Mapprop/MapProp";
@@ -11,24 +12,40 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Hoome/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Services from "./components/Services/services";
+import Errors from "./components/errors/errors";
+import Blogs from "./components/Blogs/blogs";
 
 function App() {
-  // const [data, setData] = useState(Blog);
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Home />,
+      errorElement: <Errors />,
     },
     {
-      path: "/about",
+      path: "about",
       element: <About />,
+      errorElement: <Errors />,
     },
     {
-      path: "/contact",
+      path: "contact",
       element: <Contact />,
+      errorElement: <Errors />,
+    },
+    {
+      path: "services",
+      element: <Services />,
+      errorElement: <Errors />,
+    },
+    {
+      path: "blogs",
+      element: <Blogs />,
+      errorElement: <Errors />,
     },
   ]);
-  return<RouterProvider router={router}/>
+
+  return <RouterProvider router={router} />;
   // return (
   //   <>
   //     <Button hello="9810129627" />
