@@ -1,0 +1,10 @@
+.container1 {
+    background-image: url("../../assets/background.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+  }

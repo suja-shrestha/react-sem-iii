@@ -4,3 +4,6 @@
   box-sizing: border-box;
   color: wheat;
 }
+body{
+  background-image: url(../../portfolio/src/assets/background.png);
+}

@@ -7,7 +7,7 @@ const Contact = () => {
    <Nav />
 <div className="container1">
 
-    <h1></h1>
+    
 </div>
    </>
   )

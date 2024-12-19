@@ -4,13 +4,17 @@ import Nav from '../nav/nav'
 const Aboutus = () => {
   return (
   <>
-  
-  <Nav/>
+    <Nav/>
+  <div className="container1">
 
-<div className="container1">
+  </div>
+
+
+
+
 
     
-</div>
+
   </>
   )
 }
