@@ -1,6 +1,6 @@
 import React from "react";
 import "./project.css";
-import Nav from "../nav/nav";
+import Nav from "../nav/Nav";
 import comming from "../../assets/comming.jpg";
 import Screenshot1 from "../../assets/Screenshot1.png";
 import Screenshot2 from "../../assets/Screenshot2.png";
