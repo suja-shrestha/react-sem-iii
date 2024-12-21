@@ -4,6 +4,7 @@ import "./hero.css";
 import background from "../../assets/background.png";
 import { TypeAnimation } from "react-type-animation";
 import Foot from "../footer/foot";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
@@ -32,7 +33,11 @@ const Hero = () => {
             </p>
 
             <button className="white">View My Resume</button>
-            <button className="black">Explore Projects</button>
+        <button className="black">
+                     <Link className="link" to="/project">
+                       Explore Projects
+                     </Link>
+                   </button>
           </div>
           <div className="right-paragraph">
             <div className="rotate">

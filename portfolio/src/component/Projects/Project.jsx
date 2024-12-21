@@ -1,11 +1,11 @@
 import React from "react";
 import "./project.css";
 import Nav from "../nav/nav";
-import comming from '../../assets/comming.jpg'
-import Screenshot1 from '../../assets/Screenshot1.png'
-import Screenshot2 from '../../assets/Screenshot2.png'
-import Screenshot3 from '../../assets/Screenshot3.png'
-import Screenshot4 from '../../assets/Screenshot4.png'
+import comming from "../../assets/comming.jpg";
+import Screenshot1 from "../../assets/Screenshot1.png";
+import Screenshot2 from "../../assets/Screenshot2.png";
+import Screenshot3 from "../../assets/Screenshot3.png";
+import Screenshot4 from "../../assets/Screenshot4.png";
 
 const Project = () => {
   return (
@@ -28,24 +28,35 @@ const Project = () => {
         </p>
         <div className="boxs">
           <div className="box">
-            <img src={Screenshot1} alt="" /><p>lorem10</p>
+            <img src={Screenshot1} alt="" />
+            
+            <p>
+              
+              This is a ngo web-page i made to test my css html and javascript
+              knowledge and i also deployed this webpage in the browser using
+              github
+            </p>
           </div>
           <div className="box">
-            <img src={Screenshot2} alt="" /><p>lorem10</p>
+            <img src={Screenshot2} alt="" />
+            <p>lorem10</p>
           </div>
           <div className="box">
-            <img src={Screenshot3} alt="" /><p>lorem10</p>
+            <img src={Screenshot3} alt="" />
+            <p>lorem10</p>
           </div>
           <div className="box">
-            <img src={Screenshot4} alt="" /><p>lorem10</p>
+            <img src={Screenshot4} alt="" />
+            <p>lorem10</p>
           </div>
           <div className="box">
-            <img src={comming} alt="" /><p>lorem10</p>
+            <img src={comming} alt="" />
+            <p>lorem10</p>
           </div>
           <div className="box">
-          <img src={comming} alt="" /><p>lorem10</p>
+            <img src={comming} alt="" />
+            <p>lorem10</p>
           </div>
-          
         </div>
       </div>
     </>

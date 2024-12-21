@@ -106,3 +106,7 @@ button {
 .rotate1:hover{
   rotate: 0deg;
 }
+.link{
+  list-style: none;
+
+}
