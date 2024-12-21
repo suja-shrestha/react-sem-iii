@@ -4,7 +4,6 @@
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -29,6 +28,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 0 auto;
+  background-color: rgb(77, 76, 76);
 }
 
 .form-group {
@@ -63,7 +63,6 @@
 }
 
 .submit-btn {
-  background-color: #007bff;
   color: white;
   padding: 12px 25px;
   font-size: 1.1rem;
@@ -75,7 +74,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: #272727;
 }
 .social-icons {
   display: flex;
@@ -93,4 +92,8 @@
 
 .social-icon:hover {
   color: #007bff;
+}
+label{
+  text-align: left;
+  padding-bottom: 10px;
 }

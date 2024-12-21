@@ -10,6 +10,7 @@
   margin-top: 10%;
   width: 100%;
   display: flex;
+  margin-bottom: 15%;
 }
 
 .left-paragraph h1 {
@@ -88,7 +89,6 @@ button {
 }
 
 .container1 {
-  background-image: url("../../assets/background.png");
   background-size: cover;
   background-position: center;
   width: 100%;

@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../nav/Nav";
 import "./contact.css";
+import Foot from "../footer/foot";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Contact = () => {
@@ -9,7 +10,9 @@ const Contact = () => {
       <Nav />
       <section className="contact-section">
         <div className="container">
-          <h2 className="section-title">Get in Touch</h2>
+          <h2 className="section-title" style={{
+            color:"#e5d0a8", marginBottom:"40px"
+          }}>Get in Touch</h2>
           <p className="contact-description">
             Have a project in mind or just want to say hello? I'd love to hear
             from you. Reach out via the form below!
@@ -45,11 +48,11 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn">
+            
+            <button type="submit" style={{margin:"0", marginTop:'30px'}} className="submit-btn black">
               Send Message
             </button>
-          </form>
-          <div className="social-icons">
+            <div className="social-icons">
             <a
               href="https://www.facebook.com"
               target="_blank"
@@ -83,8 +86,13 @@ const Contact = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
+          </form>
+         
+          
         </div>
+      
       </section>
+      <Foot />
     </>
   );
 };

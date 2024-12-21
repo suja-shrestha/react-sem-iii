@@ -46,8 +46,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <Foot />
+      
       </div>
+      <Foot />
     </>
   );
 };

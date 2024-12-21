@@ -9,6 +9,7 @@ import react from "../../assets/react.png";
 import html from "../../assets/html.png";
 import "animate.css";
 import { Link } from "react-router-dom";
+import Foot from "../footer/foot";
 
 const Aboutus = () => {
   return (
@@ -16,9 +17,15 @@ const Aboutus = () => {
       <Nav />
       <section className="aboutus-section">
         <div className="container">
-          <h2 style={{
-            marginTop:"50px"
-          }} className="section-title ">About Me</h2>
+          <h2
+            style={{
+              marginTop: "50px",
+              color:"#e5d0a8"
+            }}
+            className="section-title "
+          >
+            About Me
+          </h2>
           <div className="aboutus-content animate__animated animate__backInLeft">
             <p>
               Hello! I’m Sujal Shrestha, a passionate web developer and graphic
@@ -41,8 +48,10 @@ const Aboutus = () => {
               to bring your ideas to life. Let’s work together to create
               something amazing!
             </p>
-            
-            <button style={{marginRight:"20px"}} className="white">View My Resume</button>
+
+            <button style={{ marginRight: "20px" }} className="white">
+              View My Resume
+            </button>
             <button className="black">
               <Link className="link" to="/project">
                 Explore Projects
@@ -51,7 +60,6 @@ const Aboutus = () => {
           </div>
           <h1>My Language Skill</h1>
           <div className="contact-info  ">
-            
             <div className="boxes ">
               <div className="box1  animate__animated animate__backInLeft ">
                 <img src={html} alt="" />
@@ -72,10 +80,10 @@ const Aboutus = () => {
                 <img src={java} alt="" />
               </div>
             </div>
-            
           </div>
         </div>
       </section>
+      <Foot />
     </>
   );
 };
