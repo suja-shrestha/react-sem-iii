@@ -5,7 +5,7 @@ import background from "../../assets/background.png";
 import { TypeAnimation } from "react-type-animation";
 import Foot from "../footer/foot";
 import { Link } from "react-router-dom";
-import images from '../../assets/images.png'
+import images from '../../assets/images.jpg'
 const Hero = () => {
   return (
     <>
@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="hero-paragraphs">
           <div className="left-paragraph">
             <div className="type">
-              <h1 className="text-danger">
+              <h1 className="text">
                 <TypeAnimation
                   sequence={["Hello Everyone !", 500]}
                   wrapper="span"
