@@ -110,3 +110,9 @@ button {
   list-style: none;
 
 }
+.left-paragraph>.link{
+  text-decoration: none;
+}
+.left-paragraph > .link:hover{
+  background-color: transparent;
+}

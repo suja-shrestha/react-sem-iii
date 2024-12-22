@@ -5,10 +5,12 @@ import background from "../../assets/background.png";
 import { TypeAnimation } from "react-type-animation";
 import Foot from "../footer/foot";
 import { Link } from "react-router-dom";
+import images from '../../assets/images.png'
 const Hero = () => {
   return (
     <>
       <Nav />
+
       <div className="container1">
         <div className="hero-paragraphs">
           <div className="left-paragraph">
@@ -31,22 +33,25 @@ const Hero = () => {
               appealing designs.
             </p>
 
-            <button className="white">View My Resume</button>
-            <button className="black">
-              <Link className="link" to="/project">
-                Explore Projects
-              </Link>
-            </button>
+            <a
+              href="https://1drv.ms/b/c/d6b4f9a5d785190e/ESI2Ds_cLB1Dtuy1qEmMNqMBt35y9uteEH9ouLj99vtNzg?e=5cfP4g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="white">View My Resume</button>
+            </a>
+            <Link className="link" to="/project">
+              <button className="black">Explore Projects</button>
+            </Link>
           </div>
           <div className="right-paragraph">
             <div className="rotate">
               <div className="rotate1">
-                <img src={background} alt="" />
+                <img src={images} alt="" />
               </div>
             </div>
           </div>
         </div>
-      
       </div>
       <Foot />
     </>

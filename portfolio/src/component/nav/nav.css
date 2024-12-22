@@ -46,7 +46,7 @@
     color: white;
 }
 
-.link {
+ul > li > .link {
     text-decoration: none;
     padding: 10px;
     border-radius: 30px;
