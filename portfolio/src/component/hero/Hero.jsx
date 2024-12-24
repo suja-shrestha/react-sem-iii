@@ -5,7 +5,7 @@ import background from "../../assets/background.png";
 import { TypeAnimation } from "react-type-animation";
 import Foot from "../footer/foot";
 import { Link } from "react-router-dom";
-import images from '../../assets/images.jpg'
+import images from "../../assets/images.jpg";
 const Hero = () => {
   return (
     <>
@@ -43,6 +43,41 @@ const Hero = () => {
             <Link className="link" to="/project">
               <button className="black">Explore Projects</button>
             </Link>
+
+            <div style={{marginRight:"77%", marginTop:"10%"}} className="social-icons">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
           </div>
           <div className="right-paragraph">
             <div className="rotate">
