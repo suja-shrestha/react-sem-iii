@@ -19,7 +19,7 @@ const Aboutus = () => {
         <div className="container">
           <h2
             style={{
-              marginTop: "50px",
+              fontSize:"50px",
               color:"#e5d0a8"
             }}
             className="section-title "
@@ -58,7 +58,7 @@ const Aboutus = () => {
               </Link>
             </button>
           </div>
-          <h1>My Language Skill</h1>
+          <h1 style={{fontSize:"50px"}}>My Language Skill</h1>
           <div className="contact-info  ">
             <div className="boxes ">
               <div className="box1  animate__animated animate__backInLeft ">

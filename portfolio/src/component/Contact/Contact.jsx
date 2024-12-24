@@ -10,10 +10,16 @@ const Contact = () => {
       <Nav />
       <section className="contact-section">
         <div className="container">
-          <h2 className="section-title" style={{
-            color:"#e5d0a8", marginBottom:"40px"
-          }}>Get in Touch</h2>
-          <p className="contact-description">
+          <h2
+            className="section-title"
+            style={{
+              color: "#e5d0a8",
+              marginBottom: "20px",
+            }}
+          >
+            Get in Touch
+          </h2>
+          <p className="contact-description" style={{ color: "wheat" }}>
             Have a project in mind or just want to say hello? I'd love to hear
             from you. Reach out via the form below!
           </p>
@@ -48,49 +54,50 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            
-            <button type="submit" style={{margin:"0", marginTop:'30px'}} className="submit-btn black">
+
+            <button
+              type="submit"
+              style={{ margin: "0", marginTop: "30px" }}
+              className="submit-btn black"
+            >
               Send Message
             </button>
             <div className="social-icons">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </div>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
           </form>
-         
-          
         </div>
-      
       </section>
       <Foot />
     </>

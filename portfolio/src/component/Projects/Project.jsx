@@ -14,7 +14,7 @@ const Project = () => {
       <div className="container1">
         <h1
           style={{
-            marginTop: "7%",
+            marginTop: "5%",
             textAlign: "center",
             fontSize: "60px",
           }}
@@ -29,63 +29,73 @@ const Project = () => {
         <div className="boxs">
           <div className="box">
             <img src={Screenshot1} alt="" />
-            
+
             <p>
-              
-            This is an NGO webpage I designed and developed as a way to test and refine my skills in CSS, HTML, and JavaScript. I successfully deployed the webpage online using GitHub, making it accessible for others to view and interact with.
+              This is an NGO webpage I designed and developed as a way to test
+              and refine my skills in CSS, HTML, and JavaScript. I successfully
+              deployed the webpage online using GitHub, making it accessible for
+              others to view and interact with.
             </p>
             <button className="black p">Explore more</button>
-            
           </div>
           <div className="box">
             <img src={Screenshot2} alt="" />
-            
+
             <p>
-              
-            This is an NGO webpage I designed and developed as a way to test and refine my skills in CSS, HTML, and JavaScript. I successfully deployed the webpage online using GitHub, making it accessible for others to view and interact with.
+              This is an NGO webpage I designed and developed as a way to test
+              and refine my skills in CSS, HTML, and JavaScript. I successfully
+              deployed the webpage online using GitHub, making it accessible for
+              others to view and interact with.
             </p>
             <button className="black p">Explore more</button>
           </div>
           <div className="box">
             <img src={Screenshot3} alt="" />
-            
+
             <p>
-              
-            This is an NGO webpage I designed and developed as a way to test and refine my skills in CSS, HTML, and JavaScript. I successfully deployed the webpage online using GitHub, making it accessible for others to view and interact with.
+              This is an NGO webpage I designed and developed as a way to test
+              and refine my skills in CSS, HTML, and JavaScript. I successfully
+              deployed the webpage online using GitHub, making it accessible for
+              others to view and interact with.
             </p>
             <button className="black p">Explore more</button>
           </div>
           <div className="box">
             <img src={Screenshot4} alt="" />
-            
+
             <p>
-              
-            This is an NGO webpage I designed and developed as a way to test and refine my skills in CSS, HTML, and JavaScript. I successfully deployed the webpage online using GitHub, making it accessible for others to view and interact with.
+              This is an NGO webpage I designed and developed as a way to test
+              and refine my skills in CSS, HTML, and JavaScript. I successfully
+              deployed the webpage online using GitHub, making it accessible for
+              others to view and interact with.
             </p>
             <button className="black p">Explore more</button>
           </div>
           <div className="box">
             <img src={comming} alt="" />
-             
+
             <p>
-              
-            This is an NGO webpage I designed and developed as a way to test and refine my skills in CSS, HTML, and JavaScript. I successfully deployed the webpage online using GitHub, making it accessible for others to view and interact with.
+              This is an NGO webpage I designed and developed as a way to test
+              and refine my skills in CSS, HTML, and JavaScript. I successfully
+              deployed the webpage online using GitHub, making it accessible for
+              others to view and interact with.
             </p>
             <button className="black p">Explore more</button>
           </div>
           <div className="box">
             <img src={comming} alt="" />
-             
+
             <p>
-              
-            This is an NGO webpage I designed and developed as a way to test and refine my skills in CSS, HTML, and JavaScript. I successfully deployed the webpage online using GitHub, making it accessible for others to view and interact with.
+              This is an NGO webpage I designed and developed as a way to test
+              and refine my skills in CSS, HTML, and JavaScript. I successfully
+              deployed the webpage online using GitHub, making it accessible for
+              others to view and interact with.
             </p>
             <button className="black p">Explore more</button>
           </div>
         </div>
-       
       </div>
-      <Foot/>
+      <Foot />
     </>
   );
 };

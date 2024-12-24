@@ -6,6 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import Foot from "../footer/foot";
 import { Link } from "react-router-dom";
 import images from "../../assets/images.jpg";
+
 const Hero = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const Hero = () => {
             <div className="type">
               <h1 className="text">
                 <TypeAnimation
-                  sequence={["Hello Everyone !", 500]}
+                  sequence={["Hello Everyone!", 500]}
                   wrapper="span"
                   cursor={true}
                   repeat={null}
@@ -26,11 +27,11 @@ const Hero = () => {
             </div>
 
             <p>
-              I am Front-End Developer passionate about building responsive and
-              user-friendly web interfaces. Skilled in modern web technologies
-              like HTML, CSS, JavaScript, and frameworks such as React.
-              Dedicated to crafting seamless user experiences and visually
-              appealing designs.
+              I am a Front-End Developer passionate about building responsive
+              and user-friendly web interfaces. Skilled in modern web
+              technologies like HTML, CSS, JavaScript, and frameworks such as
+              React. Dedicated to crafting seamless user experiences and
+              visually appealing designs.
             </p>
 
             <a
@@ -44,7 +45,7 @@ const Hero = () => {
               <button className="black">Explore Projects</button>
             </Link>
 
-            <div style={{marginRight:"77%", marginTop:"10%"}} className="social-icons">
+            <div className="social-iconss">
               <a
                 href="https://www.facebook.com"
                 target="_blank"
@@ -79,10 +80,11 @@ const Hero = () => {
               </a>
             </div>
           </div>
+
           <div className="right-paragraph">
             <div className="rotate">
               <div className="rotate1">
-                <img src={images} alt="" />
+                <img src={images} alt="Profile" />
               </div>
             </div>
           </div>
