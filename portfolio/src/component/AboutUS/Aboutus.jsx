@@ -1,5 +1,5 @@
 import React from "react";
-import "./Aboutus.css"; // Ensure you have a CSS file for styling
+import "./Aboutus.css"; 
 import Nav from "../nav/Nav";
 import js from "../../assets/js.png";
 import css from "../../assets/css.png";
