@@ -4,7 +4,7 @@ import "./foot.css"
 const foot = () => {
   return (
     <div className="foot">
-      <p>@privacy policy: IF YOU COPY THIS YOU ARE GAY.</p>
+      <p>Copyright@2024 privacy policy: IF YOU COPY THIS YOU ARE GAY.</p>
     </div>
   );
 };
