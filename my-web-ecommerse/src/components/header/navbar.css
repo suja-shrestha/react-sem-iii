@@ -1,94 +1,140 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+/* Navbar Styling */
 .head {
-    width: 100%;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.nav img{
-    width: 80px;
-    border-radius:20px;
-}
+
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* center vertically */
+  position: relative;
+  flex-wrap: nowrap; /* prevent breaking to next line */
+  overflow: hidden; /* optional: hide anything overflowing */
 }
 
-.nav ul {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    
+.nav img.logo {
+  width: clamp(50px, 6vw, 90px);
 }
 
-.nav ul li {
-    list-style: none;
-    font-size: 1.2em;
-    border-radius: 10px ;
-    padding: 0px 10px;
-    transition: 0.5s;
-    border-bottom:none;
-}
-
-.left li:hover{
-    background: orange;
-    color: white;
-cursor: pointer;
-    
-}
-
-.left li img {
-    width: 60px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 8px 20px 4px;
-    margin: 10px;
-}
-
-.left {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
+.left,
 .right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.left li,
+.right li {
+  margin: 0 10px;
+}
+
+/* Link Styling */
+.left .link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.2rem); /* responsive text size */
+}
+
+/* Icon Styling */
+.right i {
+  font-size: clamp(1.5rem, 2.5vw, 2rem); /* responsive icon size */
+}
+
+/* Button Styling */
+.right button {
+  font-size: clamp(0.6rem, 1.5vw, 1.1rem); /* responsive button text size */
+  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1rem, 2vw, 1.5rem); /* responsive padding */
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: clamp(8rem, 20vw, 14rem); /* responsive width */
+  height: clamp(2.5rem, 5vw, 3.5rem); /* responsive height */
+  white-space: nowrap; /* stops text breaking */
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.right button:hover {
+  background-color: #333;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 910px) {
+  .nav {
+    overflow: visible; /* allow the expanded menu to be seen */
+  }
+  
+  .menu-icon {
     display: flex;
-    gap: 20px;
+  }
+
+  .left {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* translucent background */
+    backdrop-filter: blur(5px); /* adds a blur effect behind the menu */
+    flex-direction: column;
     align-items: center;
-}
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease, padding 0.5s ease; /* smooth slide and padding transition */
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* When toggled (active), expand the menu */
+  .left.active {
+    max-height: 400px; /* adjust to fit all your menu items */
+    padding: 1rem 0; /* adds vertical padding when open */
+  }
+  
+  /* Style for individual list items within the mobile menu */
+  .left li {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .left li:last-child {
+    border-bottom: none;
+  }
+  
 
-.right li button {
-    width: auto;
-    height: 40px;
-    border-radius: 30px;
-    cursor: pointer;
-    color: black;
-    padding: 0 10px;
-    background-color: transparent;
-    font-size: 1em;
-    transition: box-shadow 0.3s ease;
-}
-.right li button:hover {
-    box-shadow: 0px 12px 18px  rgba(0, 0, 0, 0.5);
- 
-}
-.link{
-    text-decoration: none;
-    color: orange;
+  .right {
+    display: none;
+  }
 
-}
-.link:hover{
-    color: white;
+  .nav img.logo {
+    width: clamp(50px, 10vw, 90px);
+  }
 }

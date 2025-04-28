@@ -1,41 +1,73 @@
-.footer{
+.footer {
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0% 8%;
     border-top: 1px solid gray;
     grid-gap: 10%;
 }
-.grid-item{
+
+.grid-item {
     margin-top: 50px;
 }
-.grid-item ul li{
+
+.grid-item ul li {
     list-style: none;
     line-height: 40px;
-    
 }
-.grid-item ul{
+
+.grid-item ul {
     padding: 0;
 }
-.grid-item > p{
+
+.grid-item > p {
     border-bottom: 1px solid gray;
     padding-bottom: 4px;
-
 }
+
 .end {
     margin-left: 8%;
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    gap: 10px; /* Space between icon and text */
-    padding-top: 30px; /* Space above the section */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
 }
 
 .end > i {
-    font-size: 30px; /* Icon size */
-    line-height: 1; /* Remove extra space around the icon */
+    font-size: 30px;
+    line-height: 1;
 }
 
-/* Optional: Adjust the paragraph styles for better alignment */
 .end > p {
-    margin: 0; /* Remove default margin from the paragraph */
-    font-size: 1.2em; /* Adjust font size as needed */
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+        margin: 0% 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        margin: 0% 5%;
+    }
+
+    .end {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    .end > i {
+        font-size: 24px;
+    }
+
+    .end > p {
+        font-size: 1em;
+    }
 }

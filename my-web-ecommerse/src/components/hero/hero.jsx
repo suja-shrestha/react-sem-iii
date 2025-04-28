@@ -20,7 +20,7 @@ function Hero() {
                   1000,
                   "We Are What You Want",
                   1000,
-                
+
                 ]}
                 wrapper="span"
                 cursor={true}
