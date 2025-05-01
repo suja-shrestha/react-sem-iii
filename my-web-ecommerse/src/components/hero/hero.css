@@ -1,37 +1,45 @@
 /* Global Reset & Responsive Text Rules */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Set a base font size on the html element (optional) */
 html {
-  /* This adjusts the base font size responsively */
-  font-size: clamp(14px, 1.5vw, 18px);
+    /* This adjusts the base font size responsively */
+    font-size: clamp(14px, 1.5vw, 18px);
 }
 
 /* Global Heading Styles */
 h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3rem);
 }
+
 h2 {
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
 }
+
 h3 {
-  font-size: clamp(1.6rem, 3vw, 3rem);
+    font-size: clamp(1.6rem, 3vw, 3rem);
 }
+
 h4 {
-  font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
 }
-h5, h6 {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+
+h5,
+h6 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
 }
 
 /* Global Text for paragraphs, list items, anchors, and buttons */
-p, li, a, button {
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+p,
+li,
+a,
+button {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 /* ---------- Your Existing CSS Below ---------- */
@@ -144,32 +152,42 @@ p, li, a, button {
 }
 
 /* Discover Heading & Paragraph */
-.discover > p,
-.discover > h5 {
+.discover {
+    width: 100%;
+    min-height: 600px;
+    /* Allow it to grow as needed */
+    height: auto;
+    /* Preferred for flexibility */
+}
+
+.discover>p,
+.discover>h5 {
     text-align: center;
 }
 
-.discover > h5 {
+.discover>h5 {
     padding-bottom: 40px;
 }
 
 /* Explore Image Section */
 .explore-image {
     display: flex;
+    
     gap: 40px;
     width: 100%;
-    height: 600px;
-    padding: 0px 100px;
+    padding: 0 100px;
 }
+
 
 .discover-left {
     width: 50%;
+    height: 100%;
 }
 
 .discover-left img {
-    max-width: 100%;
-    height: 610px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit:stretch;
     border-radius: 10px;
     border: 1px solid rgb(172, 169, 169);
 }
@@ -178,14 +196,18 @@ p, li, a, button {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    row-gap: 10px;
+    height: 100%;
 }
 
 /* Category Section */
 .category {
-    height: 350px;
+    height: 50%;
     border: 1px solid rgb(173, 171, 171);
     border-radius: 10px;
+    overflow: auto;
+    width: 100%;
+
 }
 
 .category img {
@@ -200,6 +222,14 @@ p, li, a, button {
     font-weight: bold;
     padding-left: 10px;
     padding: 0;
+    padding-bottom: 0px !important;
+    margin: 0 10px;
+
+}
+
+.category p:nth-child(3) {
+    font-size: 14px;
+    color: rgb(98, 98, 99);
 }
 
 .category :nth-child(3) {
@@ -218,11 +248,13 @@ p, li, a, button {
 .texts {
     text-align: center;
     margin-bottom: 20px;
-    padding-top: 80px;
+    padding-top: 40px;
 }
-.text-danger{
-    font-size: 3rem!important;
+
+.text-danger {
+    font-size: 3rem !important;
 }
+
 /* Four Box Section */
 .four-box {
     display: flex;
@@ -231,7 +263,7 @@ p, li, a, button {
     justify-content: center;
 }
 
-.four-box > div {
+.four-box>div {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -244,12 +276,12 @@ p, li, a, button {
     height: 200px;
 }
 
-.boxs > p,
-.boxs > a {
+.boxs>p,
+.boxs>a {
     margin-left: 60px;
 }
 
-.boxs div > i {
+.boxs div>i {
     font-size: 30px;
     border: 1px solid gray;
     border-radius: 20px;
@@ -260,19 +292,19 @@ p, li, a, button {
 }
 
 /* Review Section */
-.review > div {
+.review>div {
     gap: 20px;
     margin-top: 50px;
 }
 
-.review > h5 {
+.review>h5 {
     font-weight: bolder;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     text-align: center;
     margin-top: 100px;
 }
 
-.review-box > div {
+.review-box>div {
     font-size: 25px;
     text-align: center;
     padding-bottom: 30px;
@@ -298,18 +330,19 @@ p, li, a, button {
 
 /* Six Section */
 .six {
-    border: 1px solid gray;     
-    padding: 15px;             
-    margin: 10px;              
-    border-radius: 10px;       
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.six > p {
-    margin: 0;                 
-    padding: 5px 0;            
+.six>p {
+    margin: 0;
+    padding: 5px 0;
 }
+
 .six p:nth-child(1) {
-    font-weight: 600;  
+    font-weight: 600;
 }
 
 /* Sign-Up Section */
@@ -323,12 +356,14 @@ p, li, a, button {
 .left2 {
     width: 50%;
 }
+
 .left2 img {
     height: 400px;
     max-width: 100%;
     margin: 0 auto;
     display: block;
 }
+
 .right2 {
     width: 50%;
     padding-top: 50px;
@@ -351,6 +386,7 @@ p, li, a, button {
     padding: 0 50px;
     gap: 20px;
 }
+
 .journey .left1 {
     width: 50%;
     padding-left: 100px;
@@ -358,6 +394,7 @@ p, li, a, button {
     flex-direction: column;
     justify-content: center;
 }
+
 .journey .right1 {
     width: 50%;
     overflow: hidden;
@@ -366,6 +403,7 @@ p, li, a, button {
     justify-content: center;
     align-items: center;
 }
+
 .journey .right1 img {
     max-width: 100%;
     height: 400px;
@@ -373,6 +411,7 @@ p, li, a, button {
     margin: 0 auto;
     display: block;
 }
+
 /* Button styles within journey */
 .journey .left1 button {
     margin-top: 30px;
@@ -384,9 +423,11 @@ p, li, a, button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .journey .left1 button:hover {
     background-color: darkblue;
 }
+
 .journey .left1 h1,
 .journey .left1 h5,
 .journey .left1 p {
@@ -396,26 +437,46 @@ p, li, a, button {
 
 /* Responsive Adjustments for Journey (Mobile) */
 @media (max-width: 768px) {
-  .journey {
-    flex-direction: column;
-    padding: 0 20px;
-    margin-top: 50px;
-  }
-  .journey .left1,
-  .journey .right1 {
-    width: 100%;
-    padding: 0;
-  }
-  .journey .right1 {
-    margin-top: 20px;
-  }
-  .journey .right1 img {
-    height: auto;
-  }
-  .journey .left1 h1 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-  }
-  .journey .left1 p {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-  }
+    .journey {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .journey .left1,
+    .journey .right1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .journey .right1 {
+        margin-top: 20px;
+    }
+
+    .journey .right1 img {
+        height: auto;
+    }
+
+    .journey .left1 h1 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .journey .left1 p {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+    .explore-image {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .discover-left,
+    .discover-right {
+        width: 100%;
+    }
+
+    .discover-left img {
+        height: auto;
+        /* Avoid overflow on mobile */
+    }
 }

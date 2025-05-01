@@ -121,7 +121,7 @@ function Hero() {
         <div className="explore-image">
           <div className="discover-left">
             <img
-              src="https://img.freepik.com/premium-photo/valentines-day-background-valentines-day-card-with-roses-gifts-wooden-board_1112-2608.jpg?w=740"
+              src="https://images.pexels.com/photos/3801347/pexels-photo-3801347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
             />
           </div>
@@ -151,7 +151,7 @@ function Hero() {
         <div className="explore-image">
           <div className="discover-left">
             <img
-              src="https://img.freepik.com/premium-photo/woman-wearing-scarf-that-says-word-it_949828-15372.jpg?w=740"
+              src="https://images.pexels.com/photos/3801347/pexels-photo-3801347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
             />
           </div>
