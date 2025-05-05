@@ -36,8 +36,10 @@ function Hero() {
               you’re looking for. Whether you're seeking everyday essentials or
               unique items, we have something for everyone!
             </p>
-            <button className="white">Sign Up for Discount</button>
-            <button className="black">Explore Our Collections</button>
+            <div className="button-div">
+              <button className="white">Sign Up for Discount</button>
+              <button className="black">Explore Our Collections</button>
+            </div>
           </div>
         </div>
         <div className="numbers">
