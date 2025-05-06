@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Tauko from '../header/navbar';  // Assuming Tauko is your navbar component
+import banner from '../../assets/banner.png'; 
 import './shop.css';
 
 // Men, Women, and Children data with unique IDs
@@ -45,7 +46,7 @@ const womenData = [
   { id: 16, name: "Women's Dress", price: "$39.99", image: "https://www.bing.com/th/id/OIP.FP3kMPhKZkE47VlSya9jYwHaHa?w=194&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" },
   { id: 17, name: "Women's Hat", price: "$14.99", image: "https://www.bing.com/th/id/OIP.FP3kMPhKZkE47VlSya9jYwHaHa?w=194&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" },
   { id: 18, name: "Women's Sandals", price: "$24.99", image: "https://www.bing.com/th/id/OIP.FP3kMPhKZkE47VlSya9jYwHaHa?w=194&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" },
-  
+
 ];
 
 const childrenData = [
@@ -109,6 +110,16 @@ const Shop = () => {
             ) : (
               <p className="no-results">No products found in Men's section.</p>
             )}
+          </div>
+          {/*Banner Section */}
+          <div className="banner-container">
+          <h2>OFFER OFFER OFFER!!!</h2>
+          <div className="banner">
+          
+            
+              <img src={banner} alt="" />
+            
+          </div>
           </div>
 
           {/* Women's Section */}
